@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      #app {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      li {
+        list-style: none;
+      }
+      li a {
+        margin: 0 20px;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+
+      h1 + p {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <footer id="footer"></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
