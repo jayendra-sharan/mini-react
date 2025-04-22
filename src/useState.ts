@@ -26,7 +26,7 @@ function Counter() {
   if (!container) return;
   container.innerHTML = '';
 
-  container.appendChild(getTitle('useState Simulation'));
+  container.appendChild(getTitle('useState Simulation', 'useState'));
   
   const p = document.createElement('p');
   p.innerText = `Count: ${count}`;
