@@ -17,10 +17,16 @@
         justify-content: center;
         align-items: center;
       }
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding-left: 0;
       }
       li {
         list-style: none;
@@ -36,7 +42,9 @@
   </head>
   <body>
     <div id="app"></div>
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <a id="medium_link" class="medium_link"></div>
+    </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
