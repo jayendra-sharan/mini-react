@@ -69,20 +69,8 @@ const links = [
         window.location.replace(`#${link.id}`);
       });
 
-      let blogLinkElement = null;
-      if (link.blogLink) {
-        blogLinkElement = document.createElement("li");
-        const blogLink = document.createElement("a");
-        blogLink.href = link.blogLink;
-        blogLink.target = "_blank";
-        blogLink.innerText = "Read explanation on Medium";
-
-        blogLinkElement.appendChild(blogLink);
-      }
-
       li.appendChild(a);
       ul.appendChild(li);
-      blogLinkElement && ul.appendChild(blogLinkElement);
     });
 
   const footer = document.getElementById("footer");
@@ -91,4 +79,6 @@ const links = [
   const currentLocation = window.location.hash.slice(1);
   const render = renderFn[currentLocation] || renderFn["home"];
   render();
+  const link = document.getElementById("medium_link");
+  link && (link.innerHTML = "");
 })();

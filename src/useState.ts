@@ -40,6 +40,7 @@ function Counter() {
 
   const link = document.getElementById("medium_link");
   if (link) {
+    link.innerHTML = "";
     link.setAttribute(
       "href",
       "https://medium.com/@j.1514/simulate-react-hooks-usestate-8bbe9c04c3d7"
